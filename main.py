@@ -1,12 +1,17 @@
 import sys
 
-user = "__no_user__"
+__session_file__ = "db/session.db"
 
 def view():
-    print(user)
+    f = open(__session_file__,"r")
+    username=f.readline()
+    print(username)
 
 def login(username):
-    user = username
+    f = open(__session_file__,"w")
+    f.write(username)
+    f.close()
+
 
 def item_create(name,price,selling_price):
     print(name,price,selling_price)
