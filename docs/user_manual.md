@@ -1,5 +1,14 @@
 # Instrutions
 
+## Init
+
+### Database
+
+```
+init db
+```
+
+
 ## User
 
 ### Login
@@ -31,6 +40,12 @@ item all
 
 ```cmd
 item view <id>
+```
+
+### Search
+
+```
+item search <key> <value>
 ```
 
 ## Order
